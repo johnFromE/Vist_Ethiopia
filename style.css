@@ -1,0 +1,174 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+.img {
+    position: absolute;
+    width: 134%;
+}
+.img-con {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+div#img6 {
+    color: white;
+    font-size: 214px;
+    text-align: center;
+    font-family: fantasy;
+}
+.fade {
+    margin-top: 730px;
+    z-index: 2;
+}
+.text-con {
+    /* background: red; */
+    width: 1920px;
+    z-index: 2;
+    position: absolute;
+}
+img#fade {
+    width: 100%;
+}
+
+
+#img3 {
+    animation-name: cloud;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.53, 0.02, 0.5, 1.05);
+}
+  
+  @keyframes cloud {
+    0% {margin-left: 0px;}
+    50% {margin-left: 400px;}
+    100% {margin-left: 0px;}
+  }
+  #img7 {
+    animation-name: cloud2;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.53, 0.02, 0.5, 1.05);
+}
+  
+  @keyframes cloud2 {
+    0% {margin-left: 0px;}
+    50% {margin-left: 600px;}
+    100% {margin-left: 0px;}
+  }
+
+
+
+
+.second_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+#ethiopia_map {
+    width: 100%;
+}
+.div1 {
+    width: 600px;
+    margin: 30px;
+}
+.nav_div {
+    z-index: 4;
+    position: sticky;
+    top: 0px;
+    margin-bottom: -60px;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+.bar {
+    width: 700px;
+    height: 40px;
+    background: #00000026;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.nav1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: system-ui;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.nav1:hover {
+    font-size: 28px;
+}
+.dsc {
+    font-family: cursive;
+    font-size: 19px;
+    text-align: justify;
+    padding-top: 117px;
+}
+
+
+
+
+@font-face {
+    font-family: Neuwelt;
+    src: url(Neuwelt-Bold.ttf);
+}
+@font-face {
+    font-family: "AdwaSans";
+    src: url('AdwaSansSerif-Bold.ttf') format('truetype');
+}
+
+.div2 {
+    background: red;
+    width: 330px;
+    height: 610px;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 13px;
+    transition: 0.5s;
+}
+.div2:hover {
+    width: 350px;
+    height: 640px;
+}
+.div_to_cover_img {
+    background: linear-gradient(360deg, #036500, transparent);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+img#eth_imgs {
+    height: 100%;
+}
+#img_head {
+    font-family: AdwaSans;
+    color: white;
+    margin-left: 25px;
+    margin-bottom: -40px;
+    font-size: 60px;
+    font-weight: bold;
+}
+#img_dec {
+    font-family: Neuwelt;
+    color: white;
+    opacity: 50%;
+    margin-left: 29px;
+}

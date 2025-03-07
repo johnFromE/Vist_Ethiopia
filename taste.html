@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter and Footer Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .sixth_newsletter {
+            background: url('src/3.png') no-repeat center center/cover;
+            padding: 100px 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .sixth_newsletter h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .sixth_newsletter p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .sixth_newsletter form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sixth_newsletter input[type="email"] {
+            padding: 15px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            width: 300px;
+        }
+
+        .sixth_newsletter button {
+            padding: 15px 30px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #f3be00;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .sixth_footer {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .sixth_footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .sixth_footer-column {
+            max-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .sixth_footer h3 {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .sixth_footer p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #bbb;
+        }
+
+        .sixth_footer a {
+            color: #f3be00;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sixth_footer .sixth_social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #f3be00;
+            font-size: 1.5em;
+        }
+
+        .sixth_footer .sixth_social-icons a:hover {
+            color: #fff;
+        }
+
+        .sixth_footer .sixth_copy {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <section class="sixth_newsletter">
+        <h2>Newsletter</h2>
+        <p>Sign up for our newsletter to get updates on Ethiopian travel destinations, promotions, and insights.</p>
+        <form>
+            <input type="email" placeholder="Email">
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer class="sixth_footer">
+        <div class="sixth_footer-container">
+            <div class="sixth_footer-column">
+                <h3>Aventoura Ethiopia</h3>
+                <p>Explore the ancient wonders and natural beauty of Ethiopia. Let’s start the adventure together.</p>
+                <div class="sixth_social-icons">
+                    <a href="#">&#xf09a;</a> <!-- Facebook Icon -->
+                    <a href="#">&#xf099;</a> <!-- Twitter Icon -->
+                    <a href="#">&#xf0e1;</a> <!-- LinkedIn Icon -->
+                </div>
+            </div>
+            <div class="sixth_footer-column">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+                <a href="#">Service</a>
+                <a href="#">Legal Notice</a>
+            </div>
+            <div class="sixth_footer-column">
+                <h3>Support</h3>
+                <a href="#">Help Center</a>
+                <a href="#">FAQ</a>
+                <a href="#">Ticket Support</a>
+                <a href="#">My Account</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="sixth_footer-column">
+                <h3>Our Office</h3>
+                <p>Jln Cempaka Wangi No 22, Addis Ababa, Ethiopia</p>
+                <p>Email: hello@aventoura.et</p>
+                <p>Phone: +251 11 2002-2012</p>
+            </div>
+        </div>
+        <div class="sixth_copy">
+            <p>&copy; 2024 Aventoura Ethiopia, All rights reserved. Powered by MoxCreative.</p>
+        </div>
+    </footer>
+</body>
+</html>

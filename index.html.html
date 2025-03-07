@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Ethiopia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/906522d9f3.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+.footer {
+    background: #1f1f1f;
+}
+.ftop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #cecece;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+.ftop1 {
+    width: 390px;
+    background: red;
+    height: 328px;
+    margin: 31px;
+}
+.fbottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fbottom1 {
+    width: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    font-family: system-ui;
+    opacity: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icons {
+    font-size: 38px;
+    margin-right: 20px;
+    opacity: 100%;
+    color: white;
+}
+
+    
+.second_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sd1 {
+    background: red;
+    height: 700px;
+    width: 70%;
+    display: flex;
+}
+.sd11, .sd12 {
+    width: 46%;
+    height: 600px;
+    background: blue;
+    margin: 2%;
+}
+img#simg {
+    width: 209px;
+}
+    
+    
+    
+    
+    
+/*second section*/
+
+
+.container {
+    display: flex;
+    max-width: 900px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-section {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.text-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+        .text-section p {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #555;
+    text-align: justify;
+}
+
+.image-section {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: #8CC63E;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #78ab33;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-bottom: 6px;
+}
+#img_1, #img_4 {
+    height: 150px;
+}
+#img_2, #img_3 {
+    height: 300px;
+}
+
+    
+    
+    
+    
+/*third div*/
+.third_div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    background: #ffffff;
+    padding: 0px;
+}
+.trd-container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.trd-featured-title {
+    color: #f1a10a;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.trd-h1 {
+    margin: 10px 0 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.trd-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.trd-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.trd-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    max-width: 352px;
+    margin: 0 auto;
+    transition: 1s;
+}
+.trd-card:hover {
+    box-shadow: 0 0 15px rgb(0 0 0 / 55%);
+}
+
+.trd-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trd-card-body {
+    padding: 20px;
+}
+
+.trd-price-badge {
+    background-color: #f1a10a;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.trd-card-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.trd-card-text {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.trd-book-now {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1a10a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.trd-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: -2px;
+    margin-bottom: 16px;
+    margin-right: 23px;
+    margin-left: 21px;
+}
+
+.trd-card-footer span {
+    display: flex;
+    align-items: center;
+}
+
+.trd-card-footer span img {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 768px) {
+    .trd-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
+    
+    
+    
+
+/*fourth section*/
+div#fourth_section {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.frth-container {
+    width: 100%;
+    text-align: center;
+}
+
+.frth-hero-section {
+    background-image: url(src/back%20img.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 100px 20px;
+    color: white;
+    position: relative;
+    text-align: center;
+    background-position-y: -87px;
+    height: 300px;
+}
+.frth-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.frth-hero-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 90px;
+    }
+
+.frth-why-choose-us-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1a10a;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.frth-h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: -16px;
+}
+
+.frth-hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-family: inherit;
+}
+
+.frth-cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -137px;
+    position: relative;
+    z-index: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.frth-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 19px rgb(69 69 69 / 27%);
+    text-align: center;
+    width: 22%;
+    height: 240px;
+}
+
+.frth-card-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.frth-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.frth-card-description {
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .frth-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frth-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+    
+    
+    
+    
+    
+/*fivth div*/
+.five_testimonial-section {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    height: 400px;
+    padding-top: 90px;
+    margin-bottom: 80px;
+}
+
+.five_testimonial-heading {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.five_testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.five_testimonial-box {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.five_testimonial-text {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.five_testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.five_author-image {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.five_author-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.five_author-title {
+    font-size: 0.9em;
+    color: #888;
+}
+    
+    
+    
+    
+/*sixth*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.sixth_newsletter {
+    background: url('src/footer_back.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+    color: #333;
+}
+
+.sixth_newsletter h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.sixth_newsletter p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.sixth_newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sixth_newsletter input[type="email"] {
+    padding: 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.sixth_newsletter button {
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #f3be00;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.sixth_footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.sixth_footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sixth_footer-column {
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+
+.sixth_footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.sixth_footer p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.sixth_footer a {
+    color: #f3be00;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sixth_footer .sixth_social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #f3be00;
+    font-size: 1.5em;
+}
+
+.sixth_footer .sixth_social-icons a:hover {
+    color: #fff;
+}
+
+.sixth_footer .sixth_copy {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
+    
+div#white_shade {
+    width: 100%;
+    height: 146px;
+    background: linear-gradient(180deg, #ffffff, transparent);
+    margin-top: -100px;
+}
+</style>
+<body>
+    <div class="con">
+        <div class="nav_div">
+            <div class="bar">
+                <a class="nav1">Head</a>
+                <a class="nav1">Portfolio</a>
+                <a class="nav1">Developer</a>
+            </div>
+        </div>
+        <div class="img-con">
+            <img    class="img" id="img8" src="layer/8.png">
+            <img    class="img" id="img7" src="layer/7.png">
+            <div    class="img" id="img6" >ETHIOPIA</div>
+            <img    class="img" id="img5" src="layer/5.png">
+            <img    class="img" id="img4" src="layer/4.png">
+            <img    class="img" id="img3" src="layer/3.png">
+            <img    class="img" id="img2" src="layer/2.png">
+            <img    class="img" id="img1" src="layer/1.png">
+            <div  class="fade"><img src="layer/transmistion.png" id="fade"></div>
+        </div>
+        <div class="second_div">
+           <div class="container">
+                <div class="text-section">
+                    <h1>Ethiopia</h1>
+                    <p>Explore Ethiopia, a land of ancient wonders and breathtaking landscapes. From the rockhewn churches of Lalibela to the stunning Simien Mountains, Ethiopia is rich in history and natural beauty. taste world-famous Ethiopian coffee, and enjoy the warm hospitality of its people.</p>
+                    <a href="#" class="button">Book a visit</a>
+                </div>
+                <div class="image-section">
+                    <div id="is1">
+                        <img src="src/1.png" id="img_1" alt="Image 1">
+                        <img src="src/2.png" id="img_2" alt="Image 2">
+                    </div>
+                    <div id="is2">
+                        <img src="src/3.png" id="img_3" alt="Image 3">
+                        <img src="src/4.png" id="img_4" alt="Image 4">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="third_div">
+           <div class="trd-container">
+                <span class="trd-featured-title">FEATURED TOUR</span>
+                <h1 class="trd-h1">Popular Ethiopia Tour Packages</h1>
+                <p class="trd-subtitle">Explore the beauty of Ethiopia with our exclusive tour packages.</p>
+                <div class="trd-card-container">
+                    <div class="trd-card">
+                        <div class="trd-card-header">
+                            <img src="src/1.png" alt="Simien Mountains">
+                        </div>
+                        <div class="trd-card-body">
+                            <h2 class="trd-card-title">Simien Mountains Trek</h2>
+                            <p class="trd-card-text">Experience the breathtaking views of Ethiopia's Simien Mountains, one of Africa's largest mountain ranges.</p>
+                            <a href="#" class="trd-book-now">Book Now</a>
+                        </div>
+                        <div class="trd-card-footer">
+                            <span><img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location icon">Ethiopia</span>
+                            <span><img src="https://img.icons8.com/ios-filled/50/000000/calendar.png" alt="Calendar icon">7 Days</span>
+                            <span><img src="https://img.icons8.com/ios-filled/50/000000/today.png" alt="Date icon">October 15, 2024</span>
+                        </div>
+                    </div>
+                    <div class="trd-card">
+                        <div class="trd-card-header">
+                            <img src="src/5.png" alt="Lalibela Churches">
+                        </div>
+                        <div class="trd-card-body">
+                            <h2 class="trd-card-title">Lalibela Historic Tour</h2>
+                            <p class="trd-card-text">Discover the ancient rock-hewn churches of Lalibela, a UNESCO World Heritage site.</p>
+                            <a href="#" class="trd-book-now">Book Now</a>
+                        </div>
+                        <div class="trd-card-footer">
+                            <span><img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location icon">Ethiopia</span>
+                            <span><img src="https://img.icons8.com/ios-filled/50/000000/calendar.png" alt="Calendar icon">5 Days</span>
+                            <span><img src="https://img.icons8.com/ios-filled/50/000000/today.png" alt="Date icon">November 10, 2024</span>
+                        </div>
+                    </div>
+                    <div class="trd-card">
+                        <div class="trd-card-header">
+                            <img src="src/4.png" alt="Danakil Depression">
+                        </div>
+                        <div class="trd-card-body">
+                            <h2 class="trd-card-title">Danakil Depression Adventure</h2>
+                            <p class="trd-card-text">Embark on an adventure to one of the hottest and most inhospitable places on Earth, the Danakil Depression.</p>
+                            <a href="#" class="trd-book-now">Book Now</a>
+                        </div>
+                        <div class="trd-card-footer">
+                            <span><img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location icon">Ethiopia</span>
+                            <span><img src="https://img.icons8.com/ios-filled/50/000000/calendar.png" alt="Calendar icon">4 Days</span>
+                            <span><img src="https://img.icons8.com/ios-filled/50/000000/today.png" alt="Date icon">December 5, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div id="fourth_section">
+            <div class="frth-container">
+            <div class="frth-hero-section">
+                <div class="frth-overlay"></div>
+                <div class="frth-hero-content">
+                    <span class="frth-why-choose-us-title">WHY CHOOSE US</span>
+                    <h1 class="frth-h1">Discover the Wonders of Ethiopia</h1>
+                    <pre class="frth-hero-subtitle">
+Join us on a journey through Ethiopia's breathtaking landscapes, rich history,
+and vibrant culture. Let us guide you through an unforgettable adventure.</pre>
+                </div>
+            </div>
+
+            <div class="frth-cards-container">
+                <div class="frth-card">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/compass.png" alt="Experienced Icon" class="frth-card-icon">
+                    <h3 class="frth-card-title">Expert Guides</h3>
+                    <p class="frth-card-description">Our guides have extensive knowledge of Ethiopia's history, culture, and geography, ensuring an immersive experience.</p>
+                </div>
+
+                <div class="frth-card">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/cheap-2.png" alt="Affordable Price Icon" class="frth-card-icon">
+                    <h3 class="frth-card-title">Affordable Packages</h3>
+                    <p class="frth-card-description">We offer a variety of travel packages that suit different budgets, making your Ethiopian adventure accessible.</p>
+                </div>
+
+                <div class="frth-card">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/customer-support.png" alt="24/7 Support Icon" class="frth-card-icon">
+                    <h3 class="frth-card-title">24/7 Support</h3>
+                    <p class="frth-card-description">Our team is available around the clock to assist you with any questions or concerns during your trip.</p>
+                </div>
+                </div>
+                </div>
+        </div>
+        <div id="fivth_div">
+            <section class="five_testimonial-section">
+                <h2 class="five_testimonial-heading">What They Say</h2>
+                <div class="five_testimonial-container">
+                    <div class="five_testimonial-box">
+                        <p class="five_testimonial-text">Traveling to Ethiopia was an incredible experience. The landscapes are breathtaking, and the people are so welcoming. A must-visit destination!</p>
+                        <div class="five_testimonial-author">
+                            <img src="https://via.placeholder.com/50" alt="Shirley Call" class="five_author-image">
+                            <div>
+                                <h3 class="five_author-name">Shirley Call</h3>
+                                <p class="five_author-title">Traveler</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="five_testimonial-box">
+                        <p class="five_testimonial-text">Ethiopia offers a unique blend of history, culture, and natural beauty. I highly recommend visiting Lalibela and the Simien Mountains.</p>
+                        <div class="five_testimonial-author">
+                            <img src="https://via.placeholder.com/50" alt="Ernie Goforth" class="five_author-image">
+                            <div>
+                                <h3 class="five_author-name">Ernie Goforth</h3>
+                                <p class="five_author-title">Blogger</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="five_testimonial-box">
+                        <p class="five_testimonial-text">From the bustling markets in Addis Ababa to the serene beauty of the Omo Valley, Ethiopia is a traveler's dream.</p>
+                        <div class="five_testimonial-author">
+                            <img src="https://via.placeholder.com/50" alt="Marjorie Dennard" class="five_author-image">
+                            <div>
+                                <h3 class="five_author-name">Marjorie Dennard</h3>
+                                <p class="five_author-title">Vlogger</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="sixth_div">
+            <section class="sixth_newsletter">
+                <h2>Newsletter</h2>
+                <p>Sign up for our newsletter to get updates on Ethiopian travel destinations, promotions, and insights.</p>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Sign Up</button>
+                </form>
+            </section>
+
+            <footer class="sixth_footer">
+                <div class="sixth_footer-container">
+                    <div class="sixth_footer-column">
+                        <h3>Visit Ethiopia</h3>
+                        <p>Explore the ancient wonders and natural beauty of Ethiopia. Let’s start the adventure together.</p>
+                        <div class="sixth_social-icons">
+                            <a href="#">&#xf09a;</a> <!-- Facebook Icon -->
+                            <a href="#">&#xf099;</a> <!-- Twitter Icon -->
+                            <a href="#">&#xf0e1;</a> <!-- LinkedIn Icon -->
+                        </div>
+                    </div>
+                    <div class="sixth_footer-column">
+                        <h3>Company</h3>
+                        <a href="#">About Us</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Service</a>
+                        <a href="#">Legal Notice</a>
+                    </div>
+                    <div class="sixth_footer-column">
+                        <h3>Support</h3>
+                        <a href="#">Help Center</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Ticket Support</a>
+                        <a href="#">My Account</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="sixth_footer-column">
+                        <h3>Our Office</h3>
+                        <p>Jln Cempaka Wangi No 22, Addis Ababa, Ethiopia</p>
+                        <p>Email: hello@aventoura.et</p>
+                        <p>Phone: +251 63155856</p>
+                    </div>
+                </div>
+                <div class="sixth_copy">
+                    <p>&copy; 2024 Visit Ethiopia, All rights reserved. developed by Yonas Ayele</p>
+                </div>
+                </footer>
+        </div>
+    </div>
+    <script>
+        var img1 = document.getElementById('img1');
+        var img2 = document.getElementById('img2');
+        var img3 = document.getElementById('img3');
+        var img4 = document.getElementById('img4');
+        var img5 = document.getElementById('img5');
+        var img6 = document.getElementById('img6');
+        var img7 = document.getElementById('img7');
+        var img8 = document.getElementById('img8');
+        
+    
+
+       document.addEventListener('mousemove', function(event) {
+            var xPos = event.clientX;
+            var yPos = event.clientY;
+            var x_middle = window.innerWidth / 2
+            var y_middle = window.innerHeight/ 2
+        
+            var margin_value = (x_middle - xPos) / 3;
+            img1.style.marginLeft = margin_value *2 + "px";  
+            img2.style.marginLeft = margin_value *2 + "px";  
+           // img3.style.marginLeft = margin_value  *1.8 + "px"; 
+            img4.style.marginLeft = margin_value  *1.4 + "px";        
+            img5.style.marginLeft = margin_value  *1.6 + "px";
+            img6.style.marginLeft = margin_value  *1.2 + "px";
+           // img7.style.marginLeft = margin_value  *1.2 + "px";
+            img8.style.marginLeft = margin_value  + "px";
+
+            var margin_y = (y_middle - yPos) / 3;
+            img1.style.marginTop = margin_y *2 + "px";  
+            img2.style.marginTop = margin_y *2+ "px";  
+            img3.style.marginTop = margin_y  *1.8 + "px";
+            img4.style.marginTop = margin_y  *1.4 + "px";        
+            img5.style.marginTop = margin_y  *1.6 + "px";
+            img6.style.marginTop = margin_y  *1.2 + "px";
+            img7.style.marginTop = margin_y  *1.2 + "px";
+            img8.style.marginTop = margin_y  + "px";
+        });
+
+    </script>
+</body>
+</html>
